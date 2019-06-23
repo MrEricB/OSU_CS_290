@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+</head>
+<body>
+ 
+
+    <!-- from 1 GET -->
+    <form action="">
+        <fieldset>
+            <legend>Weather </legend>
+            <p>Enter a zipcode or a city name</p>
+            <select name="locationtype" id="locationtype">
+                <option value="zipcode">zipcode</option>
+                <option value="city">city name</option>
+            </select>
+            <br>
+            <input type="text" name="place" id="place" placeholder="">
+            <input type="submit" id="placeSubmit" value="GET">
+          </fieldset>
+    </form>
+
+    <div class="weatherinfo">
+      <h3 >Weather Data: </h3>
+        <ul id="weatherHeader">
+
+        </ul>
+    </div>
+
+    <!-- form 2 POST -->
+    <form method="POST">
+        <fieldset>
+            <legend>Send JSON data via POST request</legend>
+            <textarea name="jsonform" id="jsonform" cols="30" rows="10" placeholder="Enter JSON or Javascript object here. Or use default JSON Data."></textarea>
+            <br>
+            <input type="submit" id="mybutton" value="POST">
+            <p id="POSTresponse"></p>
+        </fieldset>
+    </form>
+
+    <script>
+      
+    </script>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

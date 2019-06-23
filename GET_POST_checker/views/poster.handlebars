@@ -1,0 +1,14 @@
+<h1>POST Request Received</h1>
+<p>Body Params</p>
+<ul>
+  {{!-- loop over each array we get from the object --}}
+  {{#each bodyList}}
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
+<p>URL Params</p>
+<ul>
+  {{#each urlList}}
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
